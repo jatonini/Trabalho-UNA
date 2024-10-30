@@ -1,0 +1,115 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #eaeaea;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A90E2;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #4A90E2;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  td, th {
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .imagem_principal {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .imagem_principal img {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 2px solid #4A90E2;
+  }
+  
+  .thumbnails {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .thumbnails img {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+  }
+  
+  .thumbnails img:hover {
+    border: 2px solid #4A90E2;
+  }
+  
+  .icones {
+    text-align: center;
+  }
+  
+  .icones img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  
+  .notas {
+    margin-top: 30px;
+    font-style: italic;
+    color: #888;
+    text-align: center;
+  }
+  

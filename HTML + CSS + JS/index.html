@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfólio</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <a href="#" class="logo">Meu Portfólio</a>
+                
+            </header>
+
+            <table>
+                <tr>
+                    <td colspan="2" class="imagem_principal">
+                        <img src="/Imagens/fotoperfil.jpg" alt="Foto de Perfil" id="foto-perfil-principal" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="thumbnails">
+                            <img src="/Imagens/fotoperfil.jpg" alt="Perfil 1" onclick="changeMainImage(this.src)" />
+                            <img src="/Imagens/cruzeiro.jpg" alt="Perfil 2" onclick="changeMainImage(this.src)" />
+                            <img src="/Imagens/matheus-pereira-no-cruzeiro.jpeg" alt="Perfil 3" onclick="changeMainImage(this.src)" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Nome Completo:</td>
+                    <td>João Augusto de Carvalho Paes Tonini</td>
+                </tr>
+                <tr>
+                    <td class="label">RA:</td>
+                    <td>32320649</td>
+                </tr>
+                <tr>
+                    <td class="label">Curso e Período Atual:</td>
+                    <td>Análise e Desenvolvimento de Sistemas - 5º Período</td>
+                </tr>
+                <tr>
+                    <td class="label">Endereço Completo:</td>
+                    <td>Rua Carmelita Faria Garofalo, 95</td>
+                </tr>
+                <tr>
+                    <td class="label">E-mail:</td>
+                    <td><input type="text" id="email" onblur="validateEmail()" /></td>
+                </tr>
+                <tr>
+                    <td class="label">CPF:</td>
+                    <td><input type="text" id="cpf" onblur="validateCPF()" placeholder="ddd.ddd.ddd-dd" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="section">
+                        <h2>Ucs já cursadas</h2>
+                        <ul id="uc-list">
+                            <li>Usabilidade, Desenvolvimento Web e Jogos <button onclick="moveUp(this)">↑</button> <button onclick="moveDown(this)">↓</button></li>
+                            <li>Inovação, Sustentabilidade e Competitividade Empresarial <button onclick="moveUp(this)">↑</button> <button onclick="moveDown(this)">↓</button></li>
+                        </ul>
+                        <button onclick="addUC()">Adicionar UC</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="section">
+                        <h2>Descrição Pessoal</h2>
+                        <textarea id="descricao-pessoal" placeholder="Escreva sobre você..."></textarea>
+                        <button onclick="addDescription()">Adicionar Informação</button>
+                        <ul id="descricao-lista"></ul>
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td colspan="2" class="section">
+                        <h2>Descrição Profissional/Acadêmica</h2>
+                        <p>Atualmente estou me aprofundando em desenvolvimento web e inteligência artificial e já trabalho na área como desenvolvedor FullStack.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="icones">
+                        <h2>Redes Sociais</h2>
+                        <ul>
+                            <li><a href="https://www.instagram.com/jatonini/" target="_blank"><img src="/Imagens/instagram.jpg" alt="Instagram" /></a></li>
+                            <li><a href="https://www.linkedin.com/in/jo%C3%A3o-tonini/" target="_blank"><img src="/Imagens/linkedin.avif" alt="LinkedIn" /></a></li>
+                            <li><a href="https://github.com/jatonini" target="_blank"><img src="/Imagens/github.png" alt="GitHub" /></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="notas"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

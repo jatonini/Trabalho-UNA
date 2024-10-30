@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <a href="#" class="logo">Meu Portfólio</a>
+               
+            </header>
+
+            <table>
+                <tr>
+                    <td colspan="2" class="imagem_principal">
+                        <img src="/Imagens/fotoperfil.jpg" alt="Foto de Perfil" id="foto-perfil-principal" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="thumbnails">
+                            <img src="/Imagens/cruzeiro.jpg" alt="Perfil 1" onclick="changeMainImage(this.src)" />
+                            <img src="/Imagens/matheus-pereira-no-cruzeiro.jpeg" alt="Perfil 2" onclick="changeMainImage(this.src)" />
+                            <img src="/Imagens/fotoperfil.jpg" alt="Perfil 3" onclick="changeMainImage(this.src)" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Nome Completo:</td>
+                    <td>João Augusto de Carvalho Paes Tonini</td>
+                </tr>
+                <tr>
+                    <td class="label">RA:</td>
+                    <td>32320649</td>
+                </tr>
+                <tr>
+                    <td class="label">Curso e Período Atual:</td>
+                    <td>Análise e Desenvolvimento de Sistemas - 5º Período</td>
+                </tr>
+                <tr>
+                    <td class="label">Endereço Completo:</td>
+                    <td>Rua Carmelita Faria Garofalo, 95</td>
+                </tr>
+                <tr>
+                    <td class="label">E-mail:</td>
+                    <td>jatonini@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="section">
+                        <h2>Ucs já cursadas</h2>
+                        <ul>
+                            <li>Usabilidade, Desenvolvimento Web e Jogos</li>
+                            <li>Inovação, Sustentabilidade e Competitividade Empresarial</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="section">
+                        <h2>Descrição Pessoal</h2>
+                        <p>Sou um apaixonado por tecnologia, gosto de praticar esportes como futebol e academia, além de passar tempo com minha família e amigos.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="section">
+                        <h2>Descrição Profissional/Acadêmica</h2>
+                        <p>Atualmente estou me aprofundando em desenvolvimento web e inteligência artificial e já trabalho na área como desenvolvedor FullStack.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="icones">
+                        <h2>Redes Sociais</h2>
+                        <ul>
+                            <li><a href="https://www.instagram.com/jatonini/" target="_blank"><img src="/Imagens/instagram.jpg" alt="Instagram" /></a></li>
+                            <li><a href="https://www.linkedin.com/in/jo%C3%A3o-tonini/" target="_blank"><img src="/Imagens/linkedin.avif" alt="LinkedIn" /></a></li>
+                            <li><a href="https://github.com/jatonini" target="_blank"><img src="/Imagens/github.png" alt="GitHub" /></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="notas"></div>
+        </div>
+    </section>
+
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('foto-perfil-principal').src = src;
+        }
+    </script>
+</body>
+</html>
