@@ -42,7 +42,7 @@ function validateEmail() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const emailInput = document.getElementById("email");
 
-    // Remove any previous validation message
+    
     emailInput.setCustomValidity("");
 
     if (email && !emailRegex.test(email)) {
@@ -62,7 +62,7 @@ function addDescription() {
         li.textContent = descricao;
         descricaoLista.appendChild(li);
         
-        // Limpar o campo de entrada após a adição
+        
         descricaoInput.value = "";
     } else {
         alert("Por favor, digite uma descrição válida.");
